@@ -1,4 +1,5 @@
 import { contact, hours, social } from "@/lib/site-data";
+import { InstagramIcon, FacebookIcon, YouTubeIcon } from "./SocialIcons";
 
 export function Visit() {
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(contact.address.mapsQuery)}&output=embed`;
@@ -36,12 +37,15 @@ export function Visit() {
             </tbody>
           </table>
 
-          <div className="mt-8 flex gap-5">
-            <a href={social.instagram} target="_blank" rel="noopener noreferrer" className="text-sm text-espresso underline underline-offset-4 decoration-brass hover:text-oxblood">
-              Instagram
+          <div className="mt-8 flex items-center gap-5">
+            <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-espresso hover:text-oxblood transition-colors">
+              <InstagramIcon className="w-5 h-5" />
             </a>
-            <a href={social.facebook} target="_blank" rel="noopener noreferrer" className="text-sm text-espresso underline underline-offset-4 decoration-brass hover:text-oxblood">
-              Facebook
+            <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-espresso hover:text-oxblood transition-colors">
+              <FacebookIcon className="w-5 h-5" />
+            </a>
+            <a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-espresso hover:text-oxblood transition-colors">
+              <YouTubeIcon className="w-5 h-5" />
             </a>
           </div>
         </div>

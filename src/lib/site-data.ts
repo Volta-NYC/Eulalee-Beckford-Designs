@@ -35,6 +35,7 @@ export const social = {
   instagram: "https://www.instagram.com/eulalee_beckford_designs/",
   instagramHandle: "@eulalee_beckford_designs",
   facebook: "https://www.facebook.com/EulaleeBeckfordDesigns/",
+  youtube: "https://www.youtube.com/channel/UCn7S-ighakSmEA2rRyMOj3w",
   shop: "https://eulaleebeckforddesigns.com/",
 };
 

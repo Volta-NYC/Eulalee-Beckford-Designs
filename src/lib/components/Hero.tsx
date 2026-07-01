@@ -7,16 +7,18 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-xs font-medium tracking-widest2 uppercase text-oxblood mb-5">
-            Brooklyn Millinery — DUMBO
+            Jamaican Heritage · Brooklyn Craft
           </p>
           <h1 className="font-display font-semibold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] text-espresso">
-            Fur Felt Hats,
+            A Legacy of Craft,
             <br />
-            <span className="italic font-medium">Handcrafted</span> in Brooklyn.
+            <span className="italic font-medium">Worn</span> With Pride.
           </h1>
           <p className="mt-6 text-base sm:text-lg text-ink/80 max-w-md leading-relaxed">
-            Ready-to-wear fedoras and open-crown styles, plus made-to-order pieces built to your fit. Milliner,
-            jewelry &amp; fashion — 145 Front Street, DUMBO.
+            Fur felt hats hand-blocked in DUMBO, Brooklyn — rooted in
+            Jamaican heritage and a longstanding presence in the borough&rsquo;s
+            Black-owned business and cultural community, from the shop floor
+            to Brooklyn&rsquo;s Kwanzaa celebrations.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-4">
@@ -34,6 +36,11 @@ export function Hero() {
             >
               Inquire About a Custom Hat
             </a>
+          </div>
+
+          <div className="mt-8 flex items-center gap-2 text-xs text-ink/60">
+            <span className="w-6 h-px bg-brass" />
+            Featured Vendor — Kwanzaa Unity Marketplace, Brooklyn
           </div>
         </div>
 
