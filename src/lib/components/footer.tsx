@@ -1,22 +1,24 @@
-import Link from "next/link"
+import { social } from "@/lib/site-data";
 
-export default function Footer() {
+export function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="border-t mt-16">
-      <div className="max-w-6xl mx-auto px-6 py-8 text-sm text-gray-500 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-col gap-1">
-          <div>© {new Date().getFullYear()} Business Name</div>
-          <Link
-            href="https://nyc.voltanpo.org"
-            target="_blank"
-            rel="noreferrer"
-            className="text-gray-600 hover:underline"
-          >
-            Website made by @VoltaNYC
-          </Link>
+    <footer className="bg-espresso text-cream/70">
+      <div className="mx-auto max-w-6xl px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="font-display text-sm tracking-widest2 uppercase text-cream">Eulalee Beckford Designs</p>
+        <nav className="flex gap-6 text-sm">
+          <a href="/#shop" className="hover:text-camel">Shop</a>
+          <a href="/#custom" className="hover:text-camel">Custom Orders</a>
+          <a href="/pages/about" className="hover:text-camel">Our Story</a>
+          <a href="/pages/contact" className="hover:text-camel">Visit</a>
+        </nav>
+        <div className="flex gap-4 text-sm">
+          <a href={social.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-camel">Instagram</a>
+          <a href={social.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-camel">Facebook</a>
         </div>
-        <div>Built with Volta</div>
       </div>
+      <p className="text-center text-xs pb-6 text-cream/40">© {year} Eulalee Beckford Designs</p>
     </footer>
-  )
+  );
 }

@@ -1,23 +1,21 @@
-export default function HomePage() {
+import { Navbar } from "@/lib/components/Navbar";
+import { Hero } from "@/lib/components/Hero";
+import { TrustBar } from "@/lib/components/TrustBar";
+import { BrimDivider } from "@/lib/components/BrimDivider";
+import { Collection } from "@/lib/components/Collection";
+import { CustomOrders } from "@/lib/components/CustomOrders";
+import { Footer } from "@/lib/components/Footer";
+
+export default function Home() {
   return (
-    <div className="space-y-8">
-      <h1 className="text-4xl font-bold">
-        Welcome to Business Name
-      </h1>
-
-      <p className="text-lg text-gray-600">
-        Replace this section with a strong value proposition.
-      </p>
-
-      <div className="flex gap-4">
-        <button className="px-6 py-3 bg-black text-white rounded-md">
-          Primary Action
-        </button>
-
-        <button className="px-6 py-3 border rounded-md">
-          Secondary Action
-        </button>
-      </div>
-    </div>
-  )
+    <main className="bg-cream">
+      <Navbar />
+      <Hero />
+      <TrustBar />
+      <Collection />
+      <BrimDivider className="text-brass" />
+      <CustomOrders />
+      <Footer />
+    </main>
+  );
 }

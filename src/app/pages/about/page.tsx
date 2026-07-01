@@ -1,10 +1,13 @@
+import { Navbar } from "@/lib/components/Navbar";
+import { OurStory } from "@/lib/components/OurStory";
+import { Footer } from "@/lib/components/Footer";
+
 export default function AboutPage() {
   return (
-    <div className="space-y-6">
-      <h1 className="text-3xl font-bold">About</h1>
-      <p className="text-gray-600">
-        Replace this with the business story, mission, and key details.
-      </p>
-    </div>
-  )
+    <main className="bg-cream">
+      <Navbar />
+      <OurStory />
+      <Footer />
+    </main>
+  );
 }
