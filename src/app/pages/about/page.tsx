@@ -1,6 +1,6 @@
-import { Navbar } from "@/lib/components/Navbar";
+import { Navbar } from "@/lib/components/navbar";
 import { OurStory } from "@/lib/components/OurStory";
-import { Footer } from "@/lib/components/Footer";
+import { Footer } from "@/lib/components/footer";
 
 export default function AboutPage() {
   return (
