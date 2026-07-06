@@ -18,10 +18,16 @@ export function Visit() {
           </div>
 
           <div className="mt-6 space-y-1">
-            <a href={contact.phoneHref} className="block text-ink hover:text-oxblood">
+            <a
+              href={contact.phoneHref}
+              className="block text-ink hover:text-oxblood focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm"
+            >
               {contact.phone}
             </a>
-            <a href={contact.emailHref} className="block text-ink hover:text-oxblood">
+            <a
+              href={contact.emailHref}
+              className="block text-ink hover:text-oxblood focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm"
+            >
               {contact.email}
             </a>
           </div>
@@ -38,13 +44,13 @@ export function Visit() {
           </table>
 
           <div className="mt-8 flex items-center gap-5">
-            <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-espresso hover:text-oxblood transition-colors">
+            <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-espresso hover:text-oxblood transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm">
               <InstagramIcon className="w-5 h-5" />
             </a>
-            <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-espresso hover:text-oxblood transition-colors">
+            <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-espresso hover:text-oxblood transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm">
               <FacebookIcon className="w-5 h-5" />
             </a>
-            <a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-espresso hover:text-oxblood transition-colors">
+            <a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-espresso hover:text-oxblood transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm">
               <YouTubeIcon className="w-5 h-5" />
             </a>
           </div>

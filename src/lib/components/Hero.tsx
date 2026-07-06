@@ -35,14 +35,14 @@ export function Hero() {
               href={social.shop}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-espresso text-cream px-6 py-3 rounded-sm text-sm font-medium hover:bg-oxblood transition-colors inline-flex items-center gap-2"
+              className="bg-espresso text-cream px-6 py-3 rounded-sm text-sm font-medium hover:bg-oxblood transition-colors inline-flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camel focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
             >
               Shop the Collection
               <ExternalLinkIcon className="w-3.5 h-3.5" />
             </a>
             <a
               href="#custom"
-              className="border border-espresso text-espresso px-6 py-3 rounded-sm text-sm font-medium hover:bg-espresso hover:text-cream transition-colors"
+              className="border border-espresso text-espresso px-6 py-3 rounded-sm text-sm font-medium hover:bg-espresso hover:text-cream transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
             >
               Inquire About a Custom Hat
             </a>

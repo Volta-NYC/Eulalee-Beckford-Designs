@@ -41,9 +41,9 @@ function CollectionCard({
         href={social.shop}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-espresso underline underline-offset-4 decoration-brass hover:text-oxblood"
+        className="mt-14 inline-flex items-center gap-2 border border-espresso text-espresso px-6 py-3 rounded-sm text-sm font-medium hover:bg-espresso hover:text-cream transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
       >
-        {item.ctaLabel}
+        View Full Collection &amp; Checkout
         <ExternalLinkIcon className="w-3.5 h-3.5" />
       </a>
     </div>

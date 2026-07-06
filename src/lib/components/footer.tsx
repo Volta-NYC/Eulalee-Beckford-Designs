@@ -14,19 +14,19 @@ export function Footer() {
           Eulalee Beckford Designs
         </p>
         <nav className="flex gap-6 text-sm">
-          <a href="/#shop" className="hover:text-camel">Shop</a>
-          <a href="/#custom" className="hover:text-camel">Custom Orders</a>
-          <a href="/pages/about" className="hover:text-camel">Our Story</a>
-          <a href="/pages/contact" className="hover:text-camel">Visit</a>
+          <a href="/#shop" className="hover:text-camel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camel focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm">Shop</a>
+          <a href="/#custom" className="hover:text-camel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camel focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm">Custom Orders</a>
+          <a href="/pages/about" className="hover:text-camel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camel focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm">Our Story</a>
+          <a href="/pages/contact" className="hover:text-camel focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camel focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm">Visit</a>
         </nav>
         <div className="flex items-center gap-4">
-          <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-cream/70 hover:text-camel transition-colors">
+          <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-cream/70 hover:text-camel transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camel focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm">
             <InstagramIcon className="w-5 h-5" />
           </a>
-          <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-cream/70 hover:text-camel transition-colors">
+          <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-cream/70 hover:text-camel transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camel focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm">
             <FacebookIcon className="w-5 h-5" />
           </a>
-          <a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-cream/70 hover:text-camel transition-colors">
+          <a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-cream/70 hover:text-camel transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camel focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm">
             <YouTubeIcon className="w-5 h-5" />
           </a>
         </div>

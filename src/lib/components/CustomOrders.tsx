@@ -21,10 +21,9 @@ export function CustomOrders() {
             with a conversation — color, crown height, brim width, and trim —
             then it&rsquo;s hand-blocked in fur felt to your size.
           </p>
-
           <a
             href={contact.emailHref}
-            className="mt-8 inline-block bg-oxblood text-cream px-6 py-3 rounded-sm text-sm font-medium shadow-[0_6px_20px_-4px_rgba(107,30,40,0.5)] hover:bg-camel hover:text-espresso transition-colors"
+            className="mt-8 inline-block bg-oxblood text-cream px-6 py-3 rounded-sm text-sm font-medium shadow-[0_6px_20px_-4px_rgba(107,30,40,0.5)] hover:bg-camel hover:text-espresso transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-camel focus-visible:ring-offset-2 focus-visible:ring-offset-espresso"
           >
             Start a Custom Order
           </a>

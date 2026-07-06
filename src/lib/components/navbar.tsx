@@ -10,25 +10,35 @@ const links = [
   { href: "/pages/contact", label: "Visit" },
 ];
 
+const focusRing =
+  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm";
+
 export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-brass/20">
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-        <a href="/" className="font-display font-semibold text-espresso text-sm tracking-widest2 uppercase">
+        <a
+          href="/"
+          className={`font-display font-semibold text-espresso text-sm tracking-widest2 uppercase ${focusRing}`}
+        >
           Eulalee Beckford Designs
         </a>
 
         <nav className="hidden md:flex items-center gap-8">
           {links.map((link) => (
-            <a key={link.href} href={link.href} className="text-sm text-ink hover:text-oxblood transition-colors">
+            <a
+              key={link.href}
+              href={link.href}
+              className={`text-sm text-ink hover:text-oxblood transition-colors ${focusRing}`}
+            >
               {link.label}
             </a>
           ))}
           <a
             href={contact.emailHref}
-            className="text-sm font-medium bg-oxblood text-cream px-4 py-2 rounded-sm hover:bg-espresso transition-colors"
+            className={`text-sm font-medium bg-oxblood text-cream px-4 py-2 rounded-sm hover:bg-espresso transition-colors ${focusRing}`}
           >
             Inquire About a Custom Hat
           </a>
@@ -37,7 +47,7 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="md:hidden text-ink"
+          className={`md:hidden text-ink p-1 ${focusRing}`}
           aria-expanded={open}
           aria-label="Toggle menu"
         >
@@ -50,13 +60,18 @@ export function Navbar() {
       {open && (
         <nav className="md:hidden border-t border-brass/20 bg-cream px-6 py-4 flex flex-col gap-4">
           {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)} className="text-sm text-ink">
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              className={`text-sm text-ink ${focusRing}`}
+            >
               {link.label}
             </a>
           ))}
           <a
             href={contact.emailHref}
-            className="text-sm font-medium bg-oxblood text-cream px-4 py-2 rounded-sm text-center"
+            className={`text-sm font-medium bg-oxblood text-cream px-4 py-2 rounded-sm text-center ${focusRing}`}
           >
             Inquire About a Custom Hat
           </a>
