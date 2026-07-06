@@ -1,10 +1,12 @@
 import { HatMark } from "./HatMark";
 import { ExternalLinkIcon } from "./ExternalLinkIcon";
+import { RibbonTrim } from "./RibbonTrim";
+import { RibbonBadge } from "./RibbonBadge";
 import { social } from "@/lib/site-data";
 
 export function Hero() {
   return (
-    <section id="top" className="bg-cream">
+    <section id="top" className="relative bg-cream overflow-hidden">
       <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-xs font-medium tracking-widest2 uppercase text-oxblood mb-5">
@@ -22,7 +24,13 @@ export function Hero() {
             to Brooklyn&rsquo;s Kwanzaa celebrations.
           </p>
 
-          <div className="mt-9 flex flex-wrap gap-4">
+          <RibbonBadge
+            title="Featured Vendor"
+            subtitle="Kwanzaa Unity Marketplace, Brooklyn"
+            className="mt-6 w-56 sm:w-64 drop-shadow-[0_6px_16px_rgba(43,29,20,0.3)]"
+          />
+
+          <div className="mt-8 flex flex-wrap gap-4">
             <a
               href={social.shop}
               target="_blank"
@@ -39,17 +47,14 @@ export function Hero() {
               Inquire About a Custom Hat
             </a>
           </div>
-
-          <div className="mt-8 flex items-center gap-2 text-xs text-ink/60">
-            <span className="w-6 h-px bg-brass" />
-            Featured Vendor — Kwanzaa Unity Marketplace, Brooklyn
-          </div>
         </div>
 
         <div className="flex justify-center md:justify-end">
           <HatMark className="w-64 sm:w-80 md:w-full max-w-sm text-camel" />
         </div>
       </div>
+
+      <RibbonTrim className="w-full h-1.5" />
     </section>
   );
 }
