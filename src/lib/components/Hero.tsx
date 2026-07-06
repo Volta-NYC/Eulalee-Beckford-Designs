@@ -1,5 +1,6 @@
 import { HatMark } from "./HatMark";
 import { ExternalLinkIcon } from "./ExternalLinkIcon";
+import { Reveal } from "./Reveal";
 import { RibbonTrim } from "./RibbonTrim";
 import { RibbonBadge } from "./RibbonBadge";
 import { social } from "@/lib/site-data";
@@ -8,7 +9,7 @@ export function Hero() {
   return (
     <section id="top" className="relative bg-cream overflow-hidden">
       <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 md:pt-24 md:pb-28 grid md:grid-cols-2 gap-12 items-center">
-        <div>
+        <Reveal>
           <p className="text-xs font-medium tracking-widest2 uppercase text-oxblood mb-5">
             Jamaican Heritage · Brooklyn Craft
           </p>
@@ -47,7 +48,7 @@ export function Hero() {
               Inquire About a Custom Hat
             </a>
           </div>
-        </div>
+        </Reveal>
 
         <div className="flex justify-center md:justify-end">
           <HatMark className="w-64 sm:w-80 md:w-full max-w-sm text-camel" />

@@ -1,10 +1,11 @@
 import { credentials } from "@/lib/site-data";
+import { Reveal } from "./Reveal";
 import { RibbonTrim } from "./RibbonTrim";
 
 export function OurStory() {
   return (
     <section id="story" className="relative bg-cream">
-      <div className="mx-auto max-w-3xl px-6 py-20 md:py-28 text-center">
+      <Reveal className="mx-auto max-w-3xl px-6 py-20 md:py-28 text-center">
         <p className="text-xs font-medium tracking-widest2 uppercase text-oxblood mb-4">
           About
         </p>
@@ -28,7 +29,7 @@ export function OurStory() {
             </span>
           ))}
         </div>
-      </div>
+      </Reveal>
 
       <RibbonTrim className="w-full h-1.5 opacity-60" />
     </section>

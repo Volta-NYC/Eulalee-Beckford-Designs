@@ -1,4 +1,5 @@
 import { contact, hours, social } from "@/lib/site-data";
+import { Reveal } from "./Reveal";
 import { InstagramIcon, FacebookIcon, YouTubeIcon } from "./SocialIcons";
 
 export function Visit() {
@@ -7,7 +8,7 @@ export function Visit() {
   return (
     <section id="visit" className="bg-cream">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28 grid md:grid-cols-2 gap-14">
-        <div>
+        <Reveal>
           <p className="text-xs font-medium tracking-widest2 uppercase text-oxblood mb-4">Visit the Shop</p>
           <h2 className="font-display font-semibold text-3xl sm:text-4xl text-espresso">145 Front Street, DUMBO</h2>
 
@@ -54,9 +55,9 @@ export function Visit() {
               <YouTubeIcon className="w-5 h-5" />
             </a>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="rounded-sm overflow-hidden border border-brass/30 min-h-[320px]">
+        <Reveal className="rounded-sm overflow-hidden border border-brass/30 min-h-[320px]">
           <iframe
             title="Eulalee Beckford Designs location"
             src={mapSrc}
@@ -64,7 +65,7 @@ export function Visit() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           />
-        </div>
+        </Reveal>
       </div>
     </section>
   );

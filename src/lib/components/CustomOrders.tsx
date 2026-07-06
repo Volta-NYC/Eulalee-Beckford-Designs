@@ -1,5 +1,6 @@
 import { customOrderSteps, contact } from "@/lib/site-data";
 import { TextureOverlay } from "./TextureOverlay";
+import { Reveal } from "./Reveal";
 import { RibbonTrim } from "./RibbonTrim";
 
 export function CustomOrders() {
@@ -9,7 +10,7 @@ export function CustomOrders() {
       <RibbonTrim className="absolute top-0 left-0 w-full h-2 opacity-90" />
 
       <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28 grid md:grid-cols-2 gap-14 items-start">
-        <div>
+        <Reveal>
           <p className="text-xs font-medium tracking-widest2 uppercase text-camel mb-4">
             Made to Order
           </p>
@@ -27,23 +28,25 @@ export function CustomOrders() {
           >
             Start a Custom Order
           </a>
-        </div>
+        </Reveal>
 
-        <ol className="space-y-8">
-          {customOrderSteps.map((step, i) => (
-            <li key={step.title} className="flex gap-5">
-              <span className="font-display text-2xl text-camel/80 leading-none">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <div>
-                <h3 className="font-medium text-cream">{step.title}</h3>
-                <p className="mt-1 text-sm text-cream/65">
-                  {step.description}
-                </p>
-              </div>
-            </li>
-          ))}
-        </ol>
+        <Reveal delay={150}>
+          <ol className="space-y-8">
+            {customOrderSteps.map((step, i) => (
+              <li key={step.title} className="flex gap-5">
+                <span className="font-display text-2xl text-camel/80 leading-none">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="font-medium text-cream">{step.title}</h3>
+                  <p className="mt-1 text-sm text-cream/65">
+                    {step.description}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </Reveal>
       </div>
 
       <RibbonTrim className="absolute bottom-0 left-0 w-full h-2 opacity-90" />
