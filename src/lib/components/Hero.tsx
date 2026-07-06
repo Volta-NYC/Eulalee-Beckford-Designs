@@ -1,4 +1,5 @@
 import { HatMark } from "./HatMark";
+import { ExternalLinkIcon } from "./ExternalLinkIcon";
 import { social } from "@/lib/site-data";
 
 export function Hero() {
@@ -26,9 +27,10 @@ export function Hero() {
               href={social.shop}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-espresso text-cream px-6 py-3 rounded-sm text-sm font-medium hover:bg-oxblood transition-colors"
+              className="bg-espresso text-cream px-6 py-3 rounded-sm text-sm font-medium hover:bg-oxblood transition-colors inline-flex items-center gap-2"
             >
               Shop the Collection
+              <ExternalLinkIcon className="w-3.5 h-3.5" />
             </a>
             <a
               href="#custom"

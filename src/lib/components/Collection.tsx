@@ -1,5 +1,6 @@
 "use client";
 
+import { ExternalLinkIcon } from "./ExternalLinkIcon";
 import { collections, social } from "@/lib/site-data";
 import { useRevealOnScroll } from "@/lib/hooks/useRevealOnScroll";
 
@@ -19,9 +20,10 @@ function CollectionCard({ item }: { item: (typeof collections)[number] }) {
         href={social.shop}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 inline-block text-sm font-medium text-espresso underline underline-offset-4 decoration-brass hover:text-oxblood"
+        className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-espresso underline underline-offset-4 decoration-brass hover:text-oxblood"
       >
-        {item.ctaLabel} →
+        {item.ctaLabel}
+        <ExternalLinkIcon className="w-3.5 h-3.5" />
       </a>
     </div>
   );
@@ -50,9 +52,10 @@ export function Collection() {
           href={social.shop}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-14 inline-block border border-espresso text-espresso px-6 py-3 rounded-sm text-sm font-medium hover:bg-espresso hover:text-cream transition-colors"
+          className="mt-14 inline-flex items-center gap-2 border border-espresso text-espresso px-6 py-3 rounded-sm text-sm font-medium hover:bg-espresso hover:text-cream transition-colors"
         >
           View Full Collection &amp; Checkout
+          <ExternalLinkIcon className="w-3.5 h-3.5" />
         </a>
       </div>
     </section>
