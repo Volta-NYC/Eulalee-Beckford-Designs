@@ -22,18 +22,18 @@ function CollectionCard({
     >
       {/* TODO: replace with real product photography from Eulalee once available */}
       <div
-        className={`aspect-[4/5] bg-camel/15 rounded-md shadow-[0_10px_30px_-8px_rgba(43,29,20,0.35)] flex items-center justify-center ${tilt}`}
+        className={`aspect-[4/5] bg-surface border border-gold/15 rounded-md shadow-[0_10px_30px_-8px_rgba(0,0,0,0.5)] flex items-center justify-center ${tilt}`}
       >
-        <div className="w-16 h-16 rounded-full border border-brass/50" />
+        <div className="w-16 h-16 rounded-full border border-gold/40" />
       </div>
-      <h3 className="mt-5 font-display text-xl text-espresso">
+      <h3 className="mt-5 font-display text-xl text-cream">
         {item.title}
       </h3>
-      <p className="mt-2 text-sm text-ink/75 leading-relaxed">
+      <p className="mt-2 text-sm text-cream/70 leading-relaxed">
         {item.description}
       </p>
       {item.priceRange && (
-        <p className="mt-2 text-sm font-medium text-oxblood">
+        <p className="mt-2 text-sm font-medium text-gold">
           {item.priceRange}
         </p>
       )}
@@ -41,9 +41,9 @@ function CollectionCard({
         href={social.shop}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-14 inline-flex items-center gap-2 border border-espresso text-espresso px-6 py-3 rounded-sm text-sm font-medium hover:bg-espresso hover:text-cream transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream"
+        className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-cream underline underline-offset-4 decoration-gold hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm"
       >
-        View Full Collection &amp; Checkout
+        {item.ctaLabel}
         <ExternalLinkIcon className="w-3.5 h-3.5" />
       </a>
     </div>
@@ -54,15 +54,15 @@ const tilts = ["rotate-[-0.6deg]", "rotate-0", "rotate-[0.6deg]"];
 
 export function Collection() {
   return (
-    <section id="shop" className="bg-cream">
+    <section id="shop" className="bg-espresso">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
-        <p className="text-xs font-medium tracking-widest2 uppercase text-oxblood mb-4">
+        <p className="text-xs font-medium tracking-widest2 uppercase text-gold mb-4">
           The Collection
         </p>
-        <h2 className="font-display font-semibold text-3xl sm:text-4xl text-espresso max-w-xl">
+        <h2 className="font-display font-semibold text-3xl sm:text-4xl text-cream max-w-xl">
           Fur Felt Hats, Kimonos &amp; Jewelry
         </h2>
-        <p className="mt-4 text-ink/75 max-w-xl leading-relaxed">
+        <p className="mt-4 text-cream/70 max-w-xl leading-relaxed">
           Each hat is shaped from 100% fur felt in fedora and open-crown
           silhouettes — ready to wear or made to order. The collection also
           includes kimonos and jewelry.
@@ -78,7 +78,7 @@ export function Collection() {
           href={social.shop}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-14 inline-flex items-center gap-2 border border-espresso text-espresso px-6 py-3 rounded-sm text-sm font-medium hover:bg-espresso hover:text-cream transition-colors"
+          className="mt-14 inline-flex items-center gap-2 border border-cream/30 text-cream px-6 py-3 rounded-sm text-sm font-medium hover:bg-cream hover:text-espresso transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-espresso"
         >
           View Full Collection &amp; Checkout
           <ExternalLinkIcon className="w-3.5 h-3.5" />

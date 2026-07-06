@@ -1,33 +1,33 @@
 import { contact, hours, social } from "@/lib/site-data";
-import { Reveal } from "./Reveal";
 import { InstagramIcon, FacebookIcon, YouTubeIcon } from "./SocialIcons";
+import { Reveal } from "./Reveal";
 
 export function Visit() {
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(contact.address.mapsQuery)}&output=embed`;
 
   return (
-    <section id="visit" className="bg-cream">
+    <section id="visit" className="bg-espresso">
       <div className="mx-auto max-w-6xl px-6 py-20 md:py-28 grid md:grid-cols-2 gap-14">
         <Reveal>
-          <p className="text-xs font-medium tracking-widest2 uppercase text-oxblood mb-4">Visit the Shop</p>
-          <h2 className="font-display font-semibold text-3xl sm:text-4xl text-espresso">145 Front Street, DUMBO</h2>
+          <p className="text-xs font-medium tracking-widest2 uppercase text-gold mb-4">Visit the Shop</p>
+          <h2 className="font-display font-semibold text-3xl sm:text-4xl text-cream">145 Front Street, DUMBO</h2>
 
-          <div className="mt-6 space-y-1 text-ink/85">
+          <div className="mt-6 space-y-1 text-cream/80">
             <p>{contact.address.line1}</p>
             <p>{contact.address.line2}</p>
-            <p className="text-sm text-ink/60">{contact.address.crossStreets}</p>
+            <p className="text-sm text-cream/50">{contact.address.crossStreets}</p>
           </div>
 
           <div className="mt-6 space-y-1">
             <a
               href={contact.phoneHref}
-              className="block text-ink hover:text-oxblood focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm"
+              className="block text-cream hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm"
             >
               {contact.phone}
             </a>
             <a
               href={contact.emailHref}
-              className="block text-ink hover:text-oxblood focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm"
+              className="block text-cream hover:text-gold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm"
             >
               {contact.email}
             </a>
@@ -36,28 +36,28 @@ export function Visit() {
           <table className="mt-8 w-full max-w-xs text-sm">
             <tbody>
               {hours.map((h) => (
-                <tr key={h.day} className="border-t border-brass/20">
-                  <td className="py-2 text-ink/70">{h.day}</td>
-                  <td className="py-2 text-right text-ink font-medium">{h.time}</td>
+                <tr key={h.day} className="border-t border-cream/10">
+                  <td className="py-2 text-cream/60">{h.day}</td>
+                  <td className="py-2 text-right text-cream font-medium">{h.time}</td>
                 </tr>
               ))}
             </tbody>
           </table>
 
           <div className="mt-8 flex items-center gap-5">
-            <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-espresso hover:text-oxblood transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm">
+            <a href={social.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-cream hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm">
               <InstagramIcon className="w-5 h-5" />
             </a>
-            <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-espresso hover:text-oxblood transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm">
+            <a href={social.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-cream hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm">
               <FacebookIcon className="w-5 h-5" />
             </a>
-            <a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-espresso hover:text-oxblood transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-oxblood focus-visible:ring-offset-2 focus-visible:ring-offset-cream rounded-sm">
+            <a href={social.youtube} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="text-cream hover:text-gold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-espresso rounded-sm">
               <YouTubeIcon className="w-5 h-5" />
             </a>
           </div>
         </Reveal>
 
-        <Reveal className="rounded-sm overflow-hidden border border-brass/30 min-h-[320px]">
+        <Reveal delay={150} className="rounded-sm overflow-hidden border border-gold/20 min-h-[320px]">
           <iframe
             title="Eulalee Beckford Designs location"
             src={mapSrc}
